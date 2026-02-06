@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 dark:bg-midnight dark:text-slate-100;
+  font-feature-settings: "ss01", "ss03";
+}
+
+::selection {
+  background: rgba(124, 92, 255, 0.35);
+  color: #fff;
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-glass-gradient border border-white/10 shadow-soft;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #7c5cff, #21d4fd);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 10%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btn-ripple:hover::after {
+  opacity: 1;
+}
+
+.fade-mask {
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}

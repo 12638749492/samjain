@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="p2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#p2)" />
+  <text x="80" y="520" font-size="58" fill="#fff" font-family="Arial, sans-serif">Branding</text>
+</svg>
